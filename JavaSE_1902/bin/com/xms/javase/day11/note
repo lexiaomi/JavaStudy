@@ -1,0 +1,34 @@
+	
+	File类：
+		1.只能操作文件或者周边信息，操作不了文件的内容
+		2.RandomACCessFile:基于指针的操作，能够随机访问文件的内容
+		  ---read():读取一个字节，存入到int类型的低八位
+		  		返回值int类型的数
+		  ---write(int i):写一字节，写int类型的低八位
+		  		指针在当前位置读写操作，然后自动后移，
+		  		为了提高效率，外加一个缓冲字节数组
+				byte[] b=new byte[1024];
+	
+			
+			
+	
+IO流：输入输出流
+	
+	低级流：
+		FileInputStream
+		FileOutputStream
+		
+	缓冲字节输入输出流
+	BufferedInputStream:
+	BufferedOutputStream:	
+		各自维护着一个缓冲区：在写出数据时需要将缓冲区写满，才会写出
+		如果需要将未满的缓冲区写出，则需要调用flush或者关流
+		使用这两个类，需要创建低级流对象
+		flush：强制性操作，增加读写次数，降低读写效率
+		
+
+
+
+
+
+

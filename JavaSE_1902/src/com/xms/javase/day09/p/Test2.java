@@ -1,0 +1,28 @@
+package com.xms.javase.day09.p;
+
+import java.io.File;
+import java.io.RandomAccessFile;
+
+public class Test2 {
+	public static void main(String[] args) throws Throwable {
+		File f=new File("D:/emp");
+		if(f.exists()){
+			f.mkdir();
+		}
+		
+		RandomAccessFile raf=new RandomAccessFile("test.txt", "r");
+		RandomAccessFile raf1=new RandomAccessFile("D:/emp/demo.txt", "rw");
+		
+		byte[] b=new byte[10];
+		int len=raf.read(b);
+		while(len!=-1){
+			raf1.write(b,0,len);	
+			len=raf.read(b);
+		}
+		raf1.close();
+		raf.close();
+		
+		System.out.println("潤崩。。。。。。");
+		
+	}
+}
