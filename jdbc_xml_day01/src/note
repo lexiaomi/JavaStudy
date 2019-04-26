@@ -1,0 +1,42 @@
+JDBC工作过程：[重要]
+1）加载驱动，创建对象
+2）创建语句对象
+3 ) 执行SQL语句
+4 ) 处理结果集
+5）关闭连接
+
+演示：员工表
+表->实体对象
+记录->对象实例
+字段->实例属性
+
+	// JDBC 核心
+	Class.forName("com.mysql.jdbc.Driver");
+
+	connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/jsd","root","1234");
+	
+	// ResuletSet 结果集
+	ResuletSet执行sql语句返回的结果集，查询结果存放ResuletSet对象的一系列行中，最初位置位于行首
+	rs.next() 方法用于在行间移动,
+	rs.getXXX(字段名|数字) 方法用来取数据
+	
+	# ?后面防止出现中文乱码
+	connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/jsd？characterEncoding=utf8","root","1234"); 
+	
+
+// 1、查询全部员工信息
+
+//2.根据员工号查询员工信息
+
+//3、员工表中插入一条记录
+insert into emp_xu values (1020,'欧阳锋','Clerk',1200,600,date_formate('','%X-%m-%d')，1013,20)
+
+//3、员工表中更新数据
+update emp_xu set ename=' ',position=' ',salary=1000,bonus=600,hirdate=date_format('','%X-%m-%d'),leader=1012,deptno=20,where empno="1020"
+
+// 4、删除一条员工表中的记录
+delete from emp_xu where empno=""
+
+
+
+
