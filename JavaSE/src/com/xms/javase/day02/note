@@ -1,0 +1,85 @@
+String 的方法：
+		* indexOf(String str);
+		 * 检索指定字符串所在的位置(下标)
+		 * 返回值为 int类型
+		 
+		 *1.整体匹配，返回值从左到又最先匹配到的字符串所对应的下标
+		 * 2.如果没有匹配到指定字符串，则返回值为-1
+		 
+		 
+		 /*
+		 * indexOf(String str,int index);
+		 * 从下标为index的位置开始检索字符串
+		 */
+		 
+		 // 字符串的方法可以嵌套使用
+		 
+		 
+		 
+		 /*
+		 * LastIndexOf(String str):
+		 * 检索指定字符串最后一次出现的位置
+		 */
+		 
+		 
+		 /*
+		 * subString(int start,int end):
+		 * 1.截取指定区域的字符串[satrt,end)
+		 * 2.返回截取的字符串
+		 *	用于截取域名
+		 * www.baidu.com--->baidu 
+		 */
+		 
+		 /*
+		 * subString(int index);
+		 * 
+		 * 截取index之后字符串(包括index)
+		 * 返回值为截取到的字符串类型的数据
+		 * 
+		 */
+		 
+		 
+		 /*
+		 * trim：
+		 * 	1.去除字符串两端的空白
+		 * 	2.不能去除字符串中间的空白
+		 * 	3.返回值为去除两端空白后的字符串
+		 * 
+		 */
+		 
+		 
+		 
+		 /*
+		 * charAt(int index)
+		 * 查看指定位置上的字符
+		 * 2.返回值为指定位置的字符
+		 */
+		 
+		 
+		 /*
+		 * startsWith(String str):
+		 * ensWidth(String str):
+		 * 1.判断某字符串是否指定字符串开头或者结尾
+		 * 2.返回值为boolean
+		 * 	如果是以指定字符串开头、结尾、则返回值为true 否则返回值为false
+		 * http:互联网传输协议
+		 * ftp:文件传输协议
+		 */
+		 
+		 
+		 
+		 /*
+		 * toUpperCase：字母字符串转换成大写
+		 * toLowerCase：字母字符串转换成小写
+		 * 返回值为改变后的字符串
+		 */
+		 
+		 
+		 /*
+		 *	equals方法是区分大小写的比较
+		 * equalsIgnoreCase(String anotherString):
+		 * 不区分大小写比较字符串
+		 * 返回值为boolean类型
+		 * 	对应的两个字母不区分大小写相同，则返回为true否则为false
+		 * 
+		 */
